@@ -99,6 +99,7 @@ function ds106bank_setup() {
 		wp_insert_post( $page_data );
 	}
 	
+	/*
 	if (! page_with_template_exists( 'page-help.php' ) ) {
   
 		// create the Write page if it does not exist
@@ -115,6 +116,7 @@ function ds106bank_setup() {
 	
 		wp_insert_post( $page_data );
 	}
+	*/
 	
 	
 } // function ds106bank_setup
