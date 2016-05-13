@@ -170,7 +170,7 @@ get_header(); ?>
 
 						<!-- thing icon or embedded media -->
 						<div class="thing-icon">
-						<a href="<?php the_permalink(); ?>"><?php echo get_thing_icon ($post->ID, 'thumbnail', 'thing-archive') ?></a>
+						<a href="<?php the_permalink(); ?>"><?php echo get_thing_icon ($post->ID, 'large', 'thing-archive') ?></a>
 						</div>
 						<!-- end icon or media -->
 					
