@@ -118,8 +118,7 @@ p.wp-caption-text {
 }
 
 .thing-icon img {
-  width: 100%;
-  height: auto;
+  height: 100%;
   overflow: auto;
   margin: auto;
   position: absolute;
