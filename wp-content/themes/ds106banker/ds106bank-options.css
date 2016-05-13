@@ -1,64 +1,193 @@
-.ui-tabs-nav {
-	border-bottom: 1px solid #ccc;
-	height: 27px;
-	margin: 20px 0;
-	padding: 0;
+/* Style sheet to fully override any other bootstrap CSS, will be called
+   last in the chain since bootstrap wants to load themes last. Take that!
+                                                                           */
+
+/* ---------------------------= General STUFF =---------------------------- */
+.more-link {
+	text-align: right;
 }
 
-.ui-tabs-nav li {
-	display: block;
-	float: left;
-	margin: 0;
+p.meta, .post-ratings {
+  font-size: small;
 }
 
-.ui-tabs-nav li a {
-	padding: 4px 20px 6px;
-	font-weight: bold;
+p.attribution {
+	width:100%;
+
 }
 
-.ui-tabs-nav li a {
-	border-style: solid;
-	border-color: #CCC #CCC #F9F9F9;
-	border-width: 1px 1px 0;
-	color: #C1C1C1;
-	text-shadow: rgba(255, 255, 255, 1) 0 1px 0;
-	display: inline-block;
-	padding: 4px 14px 6px;
-	text-decoration: none;
-	margin: 0 6px -1px 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-khtml-border-top-left-radius: 5px;
-	-khtml-border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+
+/* --------------------------= Images Be Responsive =----------------------------- */
+/* h/t http://wordpress.stackexchange.com/a/37768/14945                            */
+
+.entry-content img,
+.comment-content img,
+.widget img {
+    max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+}
+img[class*="align"],
+img[class*="wp-image-"] {
+    height: auto; /* Make sure images with WordPress-added height and width >attributes are scaled correctly */
+}
+img.size-full {
+    max-width: 97.5%;
+    width: auto; /* Prevent stretching of full-size images with height and >>width attributes in IE8 */
 }
 
-.ui-tabs-nav li.ui-tabs-selected a,
-.ui-tabs-nav li.ui-state-active a {
-	border-width: 1px;
-	color: #464646;
+.wp-caption { max-width: 100%; }
+
+p.wp-caption-text {
+    color: #969393;
+    font-weight: bold;
+    font-size: 90%;
+    padding-bottom: 2px;
+    border-bottom: 2px dotted rgb(234, 240, 240)
 }
 
-.ui-tabs-panel {
-	clear: both;
+/* ---------------------------= Single Thing =----------------------------- */
+
+
+.thing-icon-single {
+	margin: 0 auto 20px;
+	padding:0;
+	overflow: hidden;
 }
 
-.ui-tabs-panel h3 {
-	font: italic normal normal 24px/29px Georgia,"Times New Roman","Bitstream Charter",Times,serif;
-	margin: 0;
-	padding: 0 0 5px;
-	line-height: 35px;
-	text-shadow: 0 1px 0 #fff;
+.thing-icon-single img {	
+	border: 8px solid #fff;
+	width: 100%;
+    height: auto;
+	-moz-border-radius: 30px;
+	border-radius: 30px;	
 }
 
-.ui-tabs-panel h4 {
-	font-size: 15px;
-	font-weight: bold;
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	/* padding-top: 25px; */
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#examplemedia img {
+	max-width: 100%;
+	height: auto;
+	
+}
+
+#examplemedia {
+	background-color: #f8f8f8;
+	padding: 2em;
+	border: 8px solid #fff;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+
+/* -----------------------= Assignment type index =------------------------- */
+.thing-archive header, .thing-archive section {
+	padding: 1em;
+}
+
+.thing-archive {
+	background-color: #f8f8f8;
+	min-height: 100%;
+	min-width: 100%;
+	margin:2em 0;
+	border: 8px solid #fff;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.thing-icon {
+	text-align:center;
+	background-color: #f8f8f8;
+	padding:0;
+	min-height: 240px;
+	position: relative;
+	overflow: hidden;
+}
+
+.thing-icon img {
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 0px solid #fff;
+  -moz-border-radius: 30px;
+  border-radius: 0px;
+}
+
+
+article.thing-archive section.post_content p, article.type-assignments #content p, #thingcontent p {
+	overflow:hidden;
+	word-wrap:break-word;
+}
+
+.assignment-header {
+	margin: 0 0 0.5em;
+}
+
+.assignment-selector {
 	margin: 1em 0;
 }
 
-.wrap h3, .wrap table {
-	display: none;
+.hilite {
+	background-color: #f8f8f8;
+}
+
+.page-header {
+  border-bottom: none;
+}
+
+
+/* ----------------------------= Forms =------------------------------------- */
+
+#bank106form {
+	margin:4em 0;
+	background-color: #f8f8f8;
+	padding: 2em;
+	border: 8px solid #fff;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+#bank106form  .help-block {
+  line-height: 1.1;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+#bank106form label {
+	font-variant: small-caps;
+	font-size: large;
+	text-transform: lowercase;
+}
+
+.group-span-filestyle .buttonText {
+  font-size: 14px;
+  font-variant: normal;
+  text-transform: lowercase;
+}
+
+#bank106form fieldset  {
+	margin: 0 0 20px 0;
+}
+
+
+#commentform textarea {
+	width: 60%;
+	height: 150px;
 }
