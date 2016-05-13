@@ -100,12 +100,12 @@ p.wp-caption-text {
 
 .thing-archive {
 	background-color: #f8f8f8;
-	min-height: 500px;
+	min-height: 100%;
+	min-width: 100%;
 	margin:2em 0;
 	border: 8px solid #fff;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-	
 }
 
 .thing-icon {
@@ -123,7 +123,13 @@ p.wp-caption-text {
   overflow: auto;
   margin: auto;
   position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 0px solid #fff;
+  -moz-border-radius: 30px;
+  border-radius: 0px;
 }
 
 
